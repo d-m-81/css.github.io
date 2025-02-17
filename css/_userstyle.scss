@@ -1,0 +1,211 @@
+@charset "utf-8";
+
+
+
+@for $v from 0 through 10 {
+  .mgn_t#{$v * 5} {margin-top: 5px * $v;}
+}
+
+@for $v from 0 through 10 {
+  .pdg_t#{$v * 5} {padding-top: 5px * $v;}
+}
+
+
+
+@mixin lineClamp_01($line: 3) {
+  display: -webkit-box;
+  -webkit-line-clamp: $line;
+  -webkit-box-orient: vertical;
+  overflow: hidden; 
+}
+
+
+
+@mixin ifPcsp_01($mq: 'pc', $cn: '.boxx') {
+
+  @if($mq == 'pc'){
+
+    #{$cn}-pcImage {
+      display: block;
+    }
+
+    #{$cn}-spImage {
+      display: none;
+    }
+  }
+
+  @if($mq == 'sp'){
+
+    #{$cn}-pcImage {
+      display: none;
+    }
+
+    #{$cn}-spImage {
+      display: block;
+    }
+  }
+}
+
+
+
+@mixin underline_01($style: underline #000 1px solid, $position: 1px){
+
+  & {
+    text-decoration: $style;
+    text-underline-offset: $position;
+  }
+}
+
+
+
+@mixin anchorUnderline_01($style: 1px solid #000, $position: inherit, $duration: .2s){
+
+  a {
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+
+    &:before {
+      border-bottom: $style;
+      bottom: $position;
+      content: "";
+      height: 0;
+      left: auto;
+      position: absolute;
+      right: auto;
+      transform: scale(0, 1);
+      transition: transform $duration;
+      width: 100%;
+      z-index: 1;
+    }
+
+    &:hover {
+      opacity: 1;
+      filter: none;
+      -webkit-filter: none;
+    }
+
+    &:hover:before {
+      transform: scale(1, 1);
+    }
+  }
+}
+
+
+
+@mixin boxShadow_01($box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, .3)) {
+  box-shadow: $box-shadow;
+}
+
+
+
+@mixin gridView_01_contents($ml: 20px, $mb: 20px, $vx: 1, $vy: 0, $bp: 1617px) {
+  margin-bottom: gridView_01_contents_margin_bottom($mb, $vy, $bp);
+  margin-left: gridView_01_contents_margin_left($ml, $vx, $bp);
+  width: gridView_01_contents_width($ml, $vx, $bp);
+}
+
+@function gridView_01_contents_margin_bottom($mb: 20px, $vy: 0, $bp: 1617px) {
+  @if($vy == 1){
+    @return min(calc($mb / $bp * 100vw), $mb);
+  }@else{
+    @return -$mb;
+  }
+}
+
+@function gridView_01_contents_margin_left($ml: 20px, $vx: 1, $bp: 1617px) {
+  @if($vx == 1){
+    @return max(calc($ml / $bp * -100vw), calc($ml * -1));
+  }@else{
+    @return -$ml;
+  }
+}
+
+@function gridView_01_contents_width($ml: 20px, $vx: 1, $bp: 1617px) {
+  @if($vx == 1){
+    @return calc(100% + min(calc($ml / $bp * 100vw), $ml));
+  }@else{
+    @return calc(100% + $ml);
+  }
+}
+
+@mixin gridView_01_item($col: 3, $ml: 20px, $mb: 20px, $vx: 1, $vy: 0, $bp: 1617px) {
+  margin-bottom: gridView_01_item_margin_bottom($mb, $vy, $bp);
+  margin-left: gridView_01_item_margin_left($ml, $vx, $bp);
+  width: gridView_01_item_width($col, $ml, $vx, $bp);
+}
+
+@function gridView_01_item_margin_bottom($mb: 20px, $vy: 0, $bp: 1617px) {
+  @if($vy == 1){
+    @return min(calc($mb / $bp * 100vw), $mb);
+  }@else{
+    @return $mb;
+  }
+}
+
+@function gridView_01_item_margin_left($ml: 20px, $vx: 1, $bp: 1617px) {
+  @if($vx == 1){
+    @return min(calc($ml / $bp * 100vw), $ml);
+  }@else{
+    @return $ml;
+  }
+}
+
+@function gridView_01_item_width($col: 3, $ml: 20px, $vx: 1, $bp: 1617px) {
+  @if($col == 'auto' or unit($col) == 'px'){
+    @return $col;
+  }@else{
+    @if($vx == 1){
+      @return calc(100% / $col - min(calc($ml / $bp * 100vw), $ml));
+    }@else{
+      @return calc(100% / $col - $ml);
+    }
+  }
+}
+
+
+
+@mixin float_01_contents($ml: 20px, $mb: 20px, $vx: 1, $vy: 0, $bp: 1617px) {
+  margin-bottom: float_01_contents_margin_bottom($mb, $vy, $bp);
+  margin-left: float_01_contents_margin_left($ml, $vx, $bp);
+  width: float_01_contents_width($ml, $vx, $bp);
+}
+
+@function float_01_contents_margin_bottom($mb: 20px, $vy: 0, $bp: 1617px) {
+  @if($vy == 1){@return min(calc($mb / $bp * 100vw), $mb);}
+  @else{@return -$mb;}
+}
+
+@function float_01_contents_margin_left($ml: 20px, $vx: 1, $bp: 1617px) {
+  @if($vx == 1){@return max(calc($ml / $bp * -100vw), calc($ml * -1));}
+  @else{@return -$ml;}
+}
+
+@function float_01_contents_width($ml: 20px, $vx: 1, $bp: 1617px) {
+  @if($vx == 1){@return calc(100% + min(calc($ml / $bp * 100vw), $ml));}
+  @else{@return calc(100% + $ml);}
+}
+
+@mixin float_01_item($ml: 20px, $mb: 20px, $vx: 1, $vy: 0, $colw: 100px, $bp: 1617px) {
+  margin-bottom: float_01_item_margin_bottom($mb, $vy, $bp);
+  margin-left: float_01_item_margin_left($ml, $vx, $bp);
+  width: $colw;
+}
+
+@function float_01_item_margin_bottom($mb: 20px, $vy: 0, $bp: 1617px) {
+  @if($vy == 1){@return min(calc($mb / $bp * 100vw), $mb);}
+  @else{@return $mb;}
+}
+
+@function float_01_item_margin_left($ml: 20px, $vx: 1, $bp: 1617px) {
+  @if($vx == 1){@return min(calc($ml / $bp * 100vw), $ml);}
+  @else{@return $ml;}
+}
+
+
+
+@mixin img_default_style() {
+  height: auto;
+  max-width: 100%;
+  vertical-align: bottom;
+}

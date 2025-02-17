@@ -1,0 +1,391 @@
+@charset "utf-8";
+@use "site" as us;
+
+$background: #000;
+$font-color: #ddd;
+
+$pc: 1617px; //PC
+$tb: 1024px; //タブレット
+$sp: 768px;  //SP
+$pc-font-family: us.$font-jpg-1; //PC 外側の余白
+$tb-font-family: us.$font-jpg-2; //タブレット 外側の余白
+$sp-font-family: us.$font-jpg-2; //SP 外側の余白
+$pc-font-size: 16px; //PC 外側の余白
+$tb-font-size: 14px; //タブレット 外側の余白
+$sp-font-size: 14px; //SP 外側の余白
+$pc-letter-spacing: .05rem;//PC 外側の余白
+$tb-letter-spacing: .05rem;//タブレット 外側の余白
+$sp-letter-spacing: .05rem;//PC 外側の余白
+$pc-line-height: 1.8;//PC 外側の余白
+$tb-line-height: 2;//タブレット 外側の余白
+$sp-line-height: 2;//PC 外側の余白
+$pc-gutter: 100px; //PC 外側の余白
+$tb-gutter: 50px; //タブレット 外側の余白
+$sp-gutter: 20px; //SP 外側の余白
+
+$hover-1:(opacity: .65, transition: opacity .3s);
+
+// フォントの設定
+//PC
+@media screen and (min-width: $tb + 1px) {
+
+  body,
+  input,
+  textarea,
+  select {
+    @include us.fontSettings_01($pc-font-family, $pc-font-size, $font-color, $pc-letter-spacing, $tb-line-height);
+  }
+}
+
+//タッチができるデバイス
+@media (hover: none) {
+
+  body,
+  input,
+  textarea,
+  select {
+    @include us.fontSettings_01($tb-font-family, $pc-font-size, $font-color, $tb-letter-spacing, $tb-line-height);
+  }
+}
+
+//タブレット
+@media screen and (max-width: $tb) and (min-width: $sp + 1px) {
+
+  body,
+  input,
+  textarea,
+  select {
+    @include us.fontSettings_01($tb-font-family, $tb-font-size, $font-color, $tb-letter-spacing, $tb-line-height);
+  }
+}
+
+//SP
+@media screen and (max-width: $sp) {
+
+  body,
+  input,
+  textarea,
+  select {
+    @include us.fontSettings_01($tb-font-family, $sp-font-size, $font-color, $sp-letter-spacing, $sp-line-height);
+  }
+}
+
+body {
+  line-height: normal;
+  overflow-x: hidden;
+  transition: opacity 1s;
+}
+
+body.loading {
+  opacity: 0;
+}
+
+//a {
+//  text-decoration: underline 1px solid;
+//  text-decoration-thickness: 1px;
+//  text-underline-offset: inherit;
+//}
+// /フォントの設定
+
+
+
+html {
+  background: $background;
+}
+
+body {
+  background: $background;
+  counter-reset: section 0;
+}
+
+
+
+/**
+ * .section--01
+ */
+
+.section--01 {
+  padding: 100px 0 0;
+  position: relative;
+  z-index: 1;
+
+  & + & {
+    margin-top: 140vh;
+  }
+
+  a {
+    color: $font-color;
+  }
+
+  img {
+    @include us.img_default_style();
+  }
+
+  .section-pcImage {
+    display: block;
+  }
+
+  .section-spImage {
+    display: none;
+  }
+
+  .section-number {
+    position: relative;
+    top: -100px;
+    z-index: 2;
+
+    &:before {
+      color: #fff;
+      counter-increment: section 1;
+      content: '_'counter(section, decimal-leading-zero);
+      font-family: "Montserrat", sans-serif;
+      font-size: 30px;
+      font-weight: 900;
+      left: 6vw;
+      line-height: 1;
+      padding: 30px;
+      position: absolute;
+      top: 0;
+      z-index: 2;
+    }
+  }
+
+  .section-gutter {
+    padding-left: $pc-gutter;
+    padding-right: $pc-gutter;
+  }
+
+  .section-wrap {
+    margin: 0 auto;
+    max-width: 900px;
+  }
+
+  .section-contents {
+  }
+
+  .section_maxWidth_1600 {
+    max-width: 1600px;
+  }
+}
+
+
+
+/**
+ * .title--01
+ */
+
+.title--01 {
+
+  $fontSize: 40px;
+  $overflow: visible;
+
+  &, * {
+    color: $font-color;
+    font-family: "Montserrat", sans-serif;
+    font-size: $fontSize;
+    font-weight: 900;
+    line-height: 1.2;
+    text-transform: uppercase;
+  }
+
+  /*span {
+    display: inline-block;
+    height: $fontSize;
+    overflow: $overflow;
+    vertical-align: top;
+
+    b {
+      display: block;
+      line-height: 1;
+    }
+  }*/
+}
+
+
+
+/**
+ * .title--02
+ */
+
+ .title--02,
+ .title--02 * {
+   color: $font-color;
+   font-family: "Montserrat", sans-serif;
+   font-size: 40px;
+   font-weight: 700;
+   font-weight: 900;
+   line-height: 1.2;
+   text-transform: uppercase;
+ }
+ 
+ .title--02 {
+ 
+   span {
+     display: inline-block;
+     overflow: hidden;
+     vertical-align: top;
+ 
+     b {
+       display: block;
+     }
+   }
+ }
+
+
+
+/**
+ * .sentence--01
+ */
+
+.sentence--01 {
+  $fontSize: 28px;
+  $overflow: visible;
+  $perspective: 2000px;
+
+  color: $font-color;
+  font-family: 'Montserrat', sans-serif;
+  //word-break: break-all;
+
+  p {
+    font-size: $fontSize;
+    font-weight: 900;
+    line-height: 1.4;
+  }
+
+  &.sentence_fs_s p {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  span {
+    //display: inline-block;
+    //height: $fontSize;
+    overflow: $overflow;
+    perspective: $perspective;
+    vertical-align: top;
+
+    b {
+      backface-visibility: hidden;
+      //display: block;
+      transform-origin: left;
+    }
+  }
+
+  &.sentence_fs_small {
+    font-size: 14px;
+  }
+}
+
+
+
+.boxx-03 {
+
+  &-contents {
+    position: relative;
+    z-index: 1;
+  }
+}
+
+
+
+.scrollEffect-01 {
+
+  &-rect {
+    background-color: rgb(228, 228, 228);
+    display: block;
+    position: absolute;
+    top: -25vh;
+    left: -20vh;
+    right: -20vh;
+    height: 35vh;
+    transform-origin: center right;
+  }
+}
+
+
+
+.boxx--03 {
+  //overflow: hidden;
+  //padding: 16vw 0;
+
+  .boxx-wrap {
+    position: relative;
+    z-index: 1;
+  }
+
+  .boxx-contents {
+    color: #666;
+
+    background: #111111;
+    padding: 0 16vw 16vw;
+  }
+}
+
+.effect01 {
+
+  .scrollEffect--01 {
+
+    &-rect {
+      background: red;
+    }
+  }
+}
+
+
+
+.scrollEffect--01 {
+  position: relative;
+  width: 100%;
+  z-index: -1;
+
+  .scrollEffect-rect {
+    background: #111111;
+    display: block;
+    position: absolute;
+    top: -16vw;
+    left: -16vw;
+    right: -16vw;
+    height: 40vw;
+    transform-origin: center right;
+    z-index: -1;
+  }
+}
+
+
+#section-1 {
+
+  .gridView {
+
+    &-wrap {
+    }
+  
+    &-contents {
+      display: flex;
+      flex-flow: row wrap;
+      margin: 0 0 -40vw -16vw;
+      width: calc(100% + 16vw);
+  
+      & > * {
+      }
+
+      & > *:nth-child(3n + 1),
+      & > *:nth-child(3n + 2),
+      & > *:nth-child(3n + 3) {
+        //border: 1px solid red;
+        transform: translate(4vw, 0);
+      }
+
+      & > *:nth-child(6n + 1),
+      & > *:nth-child(6n + 2),
+      & > *:nth-child(6n + 3) {
+        //border: 1px solid blue;
+        transform: translate(-4vw, 0);
+      }
+    }
+  
+    &-item {
+      margin: 0 0 40vw 16vw;
+      width: calc(33.33% - 16vw);
+    }
+  }
+}
