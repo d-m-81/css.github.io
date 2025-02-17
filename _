@@ -3,14 +3,21 @@
 
 
 
+【入門】VSCodeとGitHubの連携手順・使い方をわかりやすく解説
+https://www.kagoya.jp/howto/rentalserver/webtrend/vscode/
+
+
+
 GitHub Pages サイトを作成する
 https://docs.github.com/ja/pages/getting-started-with-github-pages/creating-a-github-pages-site
 
 はてなブログの自作テーマのCSSをGitHub Pagesでホスティングして本番反映を楽にするテク
 https://furutsuki.hatenablog.com/entry/2023/11/26/155338
 
-【入門】VSCodeとGitHubの連携手順・使い方をわかりやすく解説
-https://www.kagoya.jp/howto/rentalserver/webtrend/vscode/
+
 
 ファイルを無視する
 https://docs.github.com/ja/get-started/getting-started-with-git/ignoring-files
+
+Git の管理対象から特定のファイルを除外する
+https://laraweb.net/environment/7362/
