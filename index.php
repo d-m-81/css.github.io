@@ -78,7 +78,7 @@ SmoothScroll({
 <meta name="twitter:image" content=""/>
 <title></title>
 </head>
-<body class="top loading">
+<body class="top loading" style="opacity: 1;">
 <div id="viewport">
 <header></header>
 <main>
@@ -189,36 +189,54 @@ SmoothScroll({
     <div class="section-wrap" style="max-width: 70%;">
       <div class="section-contents">
 
-      <section class="gridView">
-        <div class="gridView-wrap">
-          <div class="gridView-contents">
-            <div class="gridView-item scrollEffect--02"><img src="./img/aaron-burden-TBjlyNzZ8H4-unsplash.jpg"></div>
-            <div class="gridView-item scrollEffect--02"><img src="./img/aaron-burden-TBjlyNzZ8H4-unsplash.jpg"></div>
-            <div class="gridView-item scrollEffect--02"><img src="./img/aaron-burden-TBjlyNzZ8H4-unsplash.jpg"></div>
-            <div class="gridView-item scrollEffect--02"><img src="./img/aaron-burden-TBjlyNzZ8H4-unsplash.jpg"></div>
-            <div class="gridView-item scrollEffect--02"><img src="./img/aaron-burden-TBjlyNzZ8H4-unsplash.jpg"></div>
-            <div class="gridView-item scrollEffect--02"><img src="./img/aaron-burden-TBjlyNzZ8H4-unsplash.jpg"></div>
-            <div class="gridView-item scrollEffect--02"><img src="./img/aaron-burden-TBjlyNzZ8H4-unsplash.jpg"></div>
-            <div class="gridView-item scrollEffect--02"><img src="./img/aaron-burden-TBjlyNzZ8H4-unsplash.jpg"></div>
-            <div class="gridView-item scrollEffect--02"><img src="./img/aaron-burden-TBjlyNzZ8H4-unsplash.jpg"></div>
-            <div class="gridView-item scrollEffect--02"><img src="./img/aaron-burden-TBjlyNzZ8H4-unsplash.jpg"></div>
-            <div class="gridView-item scrollEffect--02"><img src="./img/aaron-burden-TBjlyNzZ8H4-unsplash.jpg"></div>
-            <div class="gridView-item scrollEffect--02"><img src="./img/aaron-burden-TBjlyNzZ8H4-unsplash.jpg"></div>
-            <div class="gridView-item scrollEffect--02"><img src="./img/aaron-burden-TBjlyNzZ8H4-unsplash.jpg"></div>
-            <div class="gridView-item scrollEffect--02"><img src="./img/aaron-burden-TBjlyNzZ8H4-unsplash.jpg"></div>
-            <div class="gridView-item scrollEffect--02"><img src="./img/aaron-burden-TBjlyNzZ8H4-unsplash.jpg"></div>
-            <div class="gridView-item scrollEffect--02"><img src="./img/aaron-burden-TBjlyNzZ8H4-unsplash.jpg"></div>
-            <div class="gridView-item scrollEffect--02"><img src="./img/aaron-burden-TBjlyNzZ8H4-unsplash.jpg"></div>
-            <div class="gridView-item scrollEffect--02"><img src="./img/aaron-burden-TBjlyNzZ8H4-unsplash.jpg"></div>
-            <div class="gridView-item scrollEffect--02"><img src="./img/aaron-burden-TBjlyNzZ8H4-unsplash.jpg"></div>
-            <div class="gridView-item scrollEffect--02"><img src="./img/aaron-burden-TBjlyNzZ8H4-unsplash.jpg"></div>
-            <div class="gridView-item scrollEffect--02"><img src="./img/aaron-burden-TBjlyNzZ8H4-unsplash.jpg"></div>
-            <div class="gridView-item scrollEffect--02"><img src="./img/aaron-burden-TBjlyNzZ8H4-unsplash.jpg"></div>
-            <div class="gridView-item scrollEffect--02"><img src="./img/aaron-burden-TBjlyNzZ8H4-unsplash.jpg"></div>
-            <div class="gridView-item scrollEffect--02"><img src="./img/aaron-burden-TBjlyNzZ8H4-unsplash.jpg"></div>
-          </div>
+        <div class="title--01 textEffect--02 textEffect_01">
+          <h2>Digital Design</h2>
         </div>
-      </section>
+        <br>
+        <div class="sentence--01">
+          <p>
+            <span class="textEffect-text">Design is a silent ambassador of your brand.</span><br>
+            <span class="textEffect-text">Stop them in their tracks.</span><br>
+            <span class="textEffect-text">Make them stare.</span>
+          </p>
+        </div>
+        <br>
+        <div class="sentence--01 sentence_fs_s">
+          <p class="textEffect-text">
+            Design is a silent ambassador of your brand. Stop them in their tracks. Make them stare. Design is a silent ambassador of your brand. Stop them in their tracks. Make them stare. Design is a silent ambassador of your brand. Stop them in their tracks. Make them stare. Design is a silent ambassador of your brand. Stop them in their tracks. Make them stare.
+          </p>
+        </div>
+        <br>
+        <section class="gridView">
+          <div class="gridView-wrap">
+            <div class="gridView-contents">
+              <div class="gridView-item scrollEffect--02"><img src="./img/aaron-burden-TBjlyNzZ8H4-unsplash.jpg"></div>
+              <div class="gridView-item scrollEffect--02"><img src="./img/aaron-burden-TBjlyNzZ8H4-unsplash.jpg"></div>
+              <div class="gridView-item scrollEffect--02"><img src="./img/aaron-burden-TBjlyNzZ8H4-unsplash.jpg"></div>
+              <div class="gridView-item scrollEffect--02"><img src="./img/aaron-burden-TBjlyNzZ8H4-unsplash.jpg"></div>
+              <div class="gridView-item scrollEffect--02"><img src="./img/aaron-burden-TBjlyNzZ8H4-unsplash.jpg"></div>
+              <div class="gridView-item scrollEffect--02"><img src="./img/aaron-burden-TBjlyNzZ8H4-unsplash.jpg"></div>
+              <div class="gridView-item scrollEffect--02"><img src="./img/aaron-burden-TBjlyNzZ8H4-unsplash.jpg"></div>
+              <div class="gridView-item scrollEffect--02"><img src="./img/aaron-burden-TBjlyNzZ8H4-unsplash.jpg"></div>
+              <div class="gridView-item scrollEffect--02"><img src="./img/aaron-burden-TBjlyNzZ8H4-unsplash.jpg"></div>
+              <div class="gridView-item scrollEffect--02"><img src="./img/aaron-burden-TBjlyNzZ8H4-unsplash.jpg"></div>
+              <div class="gridView-item scrollEffect--02"><img src="./img/aaron-burden-TBjlyNzZ8H4-unsplash.jpg"></div>
+              <div class="gridView-item scrollEffect--02"><img src="./img/aaron-burden-TBjlyNzZ8H4-unsplash.jpg"></div>
+              <div class="gridView-item scrollEffect--02"><img src="./img/aaron-burden-TBjlyNzZ8H4-unsplash.jpg"></div>
+              <div class="gridView-item scrollEffect--02"><img src="./img/aaron-burden-TBjlyNzZ8H4-unsplash.jpg"></div>
+              <div class="gridView-item scrollEffect--02"><img src="./img/aaron-burden-TBjlyNzZ8H4-unsplash.jpg"></div>
+              <div class="gridView-item scrollEffect--02"><img src="./img/aaron-burden-TBjlyNzZ8H4-unsplash.jpg"></div>
+              <div class="gridView-item scrollEffect--02"><img src="./img/aaron-burden-TBjlyNzZ8H4-unsplash.jpg"></div>
+              <div class="gridView-item scrollEffect--02"><img src="./img/aaron-burden-TBjlyNzZ8H4-unsplash.jpg"></div>
+              <div class="gridView-item scrollEffect--02"><img src="./img/aaron-burden-TBjlyNzZ8H4-unsplash.jpg"></div>
+              <div class="gridView-item scrollEffect--02"><img src="./img/aaron-burden-TBjlyNzZ8H4-unsplash.jpg"></div>
+              <div class="gridView-item scrollEffect--02"><img src="./img/aaron-burden-TBjlyNzZ8H4-unsplash.jpg"></div>
+              <div class="gridView-item scrollEffect--02"><img src="./img/aaron-burden-TBjlyNzZ8H4-unsplash.jpg"></div>
+              <div class="gridView-item scrollEffect--02"><img src="./img/aaron-burden-TBjlyNzZ8H4-unsplash.jpg"></div>
+              <div class="gridView-item scrollEffect--02"><img src="./img/aaron-burden-TBjlyNzZ8H4-unsplash.jpg"></div>
+            </div>
+          </div>
+        </section>
 
       </div>
     </div>

@@ -1,0 +1,23 @@
+@charset "utf-8";
+@forward "reset";
+@forward "userstyle";
+
+$font-jpg-1: #{"游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "ヒラギノ角ゴ Pro W3", 'Hiragino Kaku Gothic Pro', "Hiragino Sans", "メイリオ", Meiryo, sans-serif};
+$font-jpg-2: #{'Noto Sans JP', sans-serif};
+$font-jpm-1: #{"游明朝体", "Yu Mincho", YuMincho, "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", serif};
+
+@mixin fontSettings_01($font-family: "游ゴシック体", $font-size: 16px, $color: #000, $letter-spacing: normal, $line-height: normal, $font-weight: 400) {
+  
+  @if(str-index(#{$font-family}, "游ゴシック体") != null and str-index(#{$font-family}, "游ゴシック体") > 0) {
+    $font-weight: 500;
+  }
+
+  color: $color;
+  font-family: #{$font-family};
+  font-feature-settings: "palt";
+  font-size: $font-size;
+  font-weight: $font-weight;
+  letter-spacing: $letter-spacing;
+  line-height: $line-height;
+  -webkit-text-size-adjust: 100%;
+}
