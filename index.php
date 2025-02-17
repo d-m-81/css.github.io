@@ -31,11 +31,7 @@ font-family: 'Teko', sans-serif;
 font-family: 'Zen Kaku Gothic New', sans-serif;
 font-family: 'Zen Old Mincho', serif;
 -->
-<link rel="stylesheet" href="./css/style.css?<?php echo time(); ?>">
-<script>
-var home_url = '';
-var site_url = 'https://8344d0083b78f49b.lolipop.jp/iamtep/wp/wp-content/themes/iamtep';
-</script>
+<link rel="stylesheet" href="./style.css?<?php echo time(); ?>">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/CSSRulePlugin.min.js" integrity="sha512-+35N1KBHwTDnFOBSqO2nm/qsf5okaS74sUZu/rT/wlvuAfJ1hrAoGlWZip2l1LHB1q2i8B2k84Pb/NrC38bv8Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -60,7 +56,6 @@ SmoothScroll({
   //fixedBackground: 1
 });
 </script>
-<script src="./js/script.js?<?php echo time(); ?>" type="module"></script>
 <meta name="keywords" content=""/>
 <meta name="description" content=""/>
 <meta property="og:locale" content="ja_JP"/>

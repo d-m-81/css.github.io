@@ -456,3 +456,15 @@ body {
   margin: 0 0 40vw 16vw;
   width: calc(33.33% - 16vw);
 }
+
+#section-2 {
+  background-color: red;
+}
+
+#section-3 {
+  background-color: red;
+}
+
+#section-4 {
+  background-color: red;
+}/*# sourceMappingURL=style.css.map */
