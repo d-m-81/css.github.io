@@ -330,6 +330,9 @@ body {
   font-size: 28px;
   line-height: 1.2;
 }
+.sentence--01 p + p {
+  margin-top: 28px;
+}
 
 /**
  * #section-1 .gridView

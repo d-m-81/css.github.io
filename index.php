@@ -213,6 +213,9 @@ window.addEventListener('load',(e)=>{
             <p>
               Design is a silent ambassador of your brand. Stop them in their tracks. Make them stare. Design is a silent ambassador of your brand. Stop them in their tracks. Make them stare. Design is a silent ambassador of your brand. Stop them in their tracks. Make them stare. Design is a silent ambassador of your brand. Stop them in their tracks. Make them stare.
             </p>
+            <p>
+              Design is a silent ambassador of your brand. Stop them in their tracks. Make them stare. Design is a silent ambassador of your brand. Stop them in their tracks. Make them stare. Design is a silent ambassador of your brand. Stop them in their tracks. Make them stare. Design is a silent ambassador of your brand. Stop them in their tracks. Make them stare.
+            </p>
           </div>
         </div>
       </div>
@@ -240,6 +243,9 @@ window.addEventListener('load',(e)=>{
         </div>
         <div class="section-item">
           <div class="sentence--01">
+            <p>
+              Design is a silent ambassador of your brand. Stop them in their tracks. Make them stare. Design is a silent ambassador of your brand. Stop them in their tracks. Make them stare. Design is a silent ambassador of your brand. Stop them in their tracks. Make them stare. Design is a silent ambassador of your brand. Stop them in their tracks. Make them stare.
+            </p>
             <p>
               Design is a silent ambassador of your brand. Stop them in their tracks. Make them stare. Design is a silent ambassador of your brand. Stop them in their tracks. Make them stare. Design is a silent ambassador of your brand. Stop them in their tracks. Make them stare. Design is a silent ambassador of your brand. Stop them in their tracks. Make them stare.
             </p>
