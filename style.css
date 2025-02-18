@@ -299,7 +299,7 @@ body.loading {
 }
 .section--01 .section-wrap {
   margin: 0 auto;
-  width: min(100vw, 1000px);
+  width: min(100%, 1000px);
 }
 .section--01 .section-contents .section-item + .section-item {
   margin-top: 40px;
