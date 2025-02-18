@@ -265,7 +265,6 @@ body {
  * .section--01
  */
 .section--01 {
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
   padding: 200px 0;
 }
 .section--01 + .section--01 {
