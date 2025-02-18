@@ -105,28 +105,11 @@ body {
  */
 
 .section--01 {
-  padding: 100px 0 0;
-  position: relative;
-  z-index: 1;
+  border-top: 1px solid rgba(255, 255, 255, .1);
+  padding: 200px 0;
 
   & + & {
-    margin-top: 140vh;
-  }
-
-  a {
-    color: $font-color;
-  }
-
-  img {
-    @include us.img_default_style();
-  }
-
-  .section-pcImage {
-    display: block;
-  }
-
-  .section-spImage {
-    display: none;
+    margin-top: 200px;
   }
 
   .section-number {
@@ -150,21 +133,39 @@ body {
     }
   }
 
-  .section-gutter {
-    padding-left: $pc-gutter;
-    padding-right: $pc-gutter;
+  img {
+    height: auto;
+    max-width: 100%;
+    vertical-align: bottom;
+  }
+
+  .section-pcImage {
+    display: block;
+  }
+
+  .section-spImage {
+    display: none;
   }
 
   .section-wrap {
     margin: 0 auto;
-    max-width: 900px;
+    width: min(100vw, 1000px);
+  }
+
+  .section-headr {
   }
 
   .section-contents {
+
+    .section-item {
+
+      & + .section-item {
+        margin-top: 40px;
+      }
+    }
   }
 
-  .section_maxWidth_1600 {
-    max-width: 1600px;
+  .section-footer {
   }
 }
 
@@ -176,60 +177,12 @@ body {
 
 .title--01 {
 
-  $fontSize: 40px;
-  $overflow: visible;
-
-  &, * {
-    color: $font-color;
-    font-family: "Montserrat", sans-serif;
-    font-size: $fontSize;
-    font-weight: 900;
-    line-height: 1.2;
-    text-transform: uppercase;
-  }
-
-  /*span {
-    display: inline-block;
-    height: $fontSize;
-    overflow: $overflow;
-    vertical-align: top;
-
-    b {
-      display: block;
-      line-height: 1;
-    }
-  }*/
+  font-family: "Montserrat", sans-serif;
+  font-size: 80px;
+  font-weight: 900;
+  line-height: 1.2;
+  text-transform: uppercase;
 }
-
-
-
-/**
- * .title--02
- */
-
- .title--02,
- .title--02 * {
-   color: $font-color;
-   font-family: "Montserrat", sans-serif;
-   font-size: 40px;
-   font-weight: 700;
-   font-weight: 900;
-   line-height: 1.2;
-   text-transform: uppercase;
- }
- 
- .title--02 {
- 
-   span {
-     display: inline-block;
-     overflow: hidden;
-     vertical-align: top;
- 
-     b {
-       display: block;
-     }
-   }
- }
 
 
 
@@ -238,119 +191,21 @@ body {
  */
 
 .sentence--01 {
-  $fontSize: 28px;
-  $overflow: visible;
-  $perspective: 2000px;
-
-  color: $font-color;
   font-family: 'Montserrat', sans-serif;
-  //word-break: break-all;
+  font-size: 14px;
+  line-height: 1.6;
 
-  p {
-    font-size: $fontSize;
-    font-weight: 900;
-    line-height: 1.4;
-  }
-
-  &.sentence_fs_s p {
-    font-size: 14px;
-    line-height: 1.4;
-  }
-
-  span {
-    //display: inline-block;
-    //height: $fontSize;
-    overflow: $overflow;
-    perspective: $perspective;
-    vertical-align: top;
-
-    b {
-      backface-visibility: hidden;
-      //display: block;
-      transform-origin: left;
-    }
-  }
-
-  &.sentence_fs_small {
-    font-size: 14px;
+  &.sentence_fs_l {
+    font-size: 28px;
+    line-height: 1.2;
   }
 }
 
 
 
-.boxx-03 {
-
-  &-contents {
-    position: relative;
-    z-index: 1;
-  }
-}
-
-
-
-.scrollEffect-01 {
-
-  &-rect {
-    background-color: rgb(228, 228, 228);
-    display: block;
-    position: absolute;
-    top: -25vh;
-    left: -20vh;
-    right: -20vh;
-    height: 35vh;
-    transform-origin: center right;
-  }
-}
-
-
-
-.boxx--03 {
-  //overflow: hidden;
-  //padding: 16vw 0;
-
-  .boxx-wrap {
-    position: relative;
-    z-index: 1;
-  }
-
-  .boxx-contents {
-    color: #666;
-
-    background: #111111;
-    padding: 0 16vw 16vw;
-  }
-}
-
-.effect01 {
-
-  .scrollEffect--01 {
-
-    &-rect {
-      background: red;
-    }
-  }
-}
-
-
-
-.scrollEffect--01 {
-  position: relative;
-  width: 100%;
-  z-index: -1;
-
-  .scrollEffect-rect {
-    background: #111111;
-    display: block;
-    position: absolute;
-    top: -16vw;
-    left: -16vw;
-    right: -16vw;
-    height: 40vw;
-    transform-origin: center right;
-    z-index: -1;
-  }
-}
-
+/**
+ * #section-1 .gridView
+ */
 
 #section-1 {
 
@@ -388,27 +243,4 @@ body {
       width: calc(33.33% - 16vw);
     }
   }
-}
-
-
-
-#section-2 {
-  background-color: red;
-}
-
-
-
-#section-3 {
-  background-color: red;
-}
-
-
-
-#section-4 {
-  background-color: red;
-}
-
-
-
-#section-5 {
 }

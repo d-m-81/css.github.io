@@ -72,8 +72,19 @@ SmoothScroll({
 <meta name="twitter:description" content=""/>
 <meta name="twitter:image" content=""/>
 <title></title>
+<script>
+window.addEventListener('load',(e)=>{
+
+  document.body.classList.remove('loading')
+
+  document.querySelectorAll('.section--01').forEach((v, k)=>{
+  
+    v.insertAdjacentHTML('afterbegin', '<div class="section-number"></div>');
+  })
+})
+</script>
 </head>
-<body class="top loading" style="opacity: 1;">
+<body class="top loading">
 <div id="viewport">
 <header></header>
 <main>
@@ -181,58 +192,59 @@ SmoothScroll({
 
 <section id="section-1" class="section--01">
   <div class="gutter--01">
-    <div class="section-wrap" style="max-width: 70%;">
+    <div class="section-wrap">
       <div class="section-contents">
-
-        <div class="title--01 textEffect--02 textEffect_01">
-          <h2>Digital Design</h2>
-        </div>
-        <br>
-        <div class="sentence--01">
-          <p>
-            <span class="textEffect-text">Design is a silent ambassador of your brand.</span><br>
-            <span class="textEffect-text">Stop them in their tracks.</span><br>
-            <span class="textEffect-text">Make them stare.</span>
-          </p>
-        </div>
-        <br>
-        <div class="sentence--01 sentence_fs_s">
-          <p class="textEffect-text">
-            Design is a silent ambassador of your brand. Stop them in their tracks. Make them stare. Design is a silent ambassador of your brand. Stop them in their tracks. Make them stare. Design is a silent ambassador of your brand. Stop them in their tracks. Make them stare. Design is a silent ambassador of your brand. Stop them in their tracks. Make them stare.
-          </p>
-        </div>
-        <br>
-        <section class="gridView">
-          <div class="gridView-wrap">
-            <div class="gridView-contents">
-              <div class="gridView-item scrollEffect--02"><img src="./img/aaron-burden-TBjlyNzZ8H4-unsplash.jpg"></div>
-              <div class="gridView-item scrollEffect--02"><img src="./img/aaron-burden-TBjlyNzZ8H4-unsplash.jpg"></div>
-              <div class="gridView-item scrollEffect--02"><img src="./img/aaron-burden-TBjlyNzZ8H4-unsplash.jpg"></div>
-              <div class="gridView-item scrollEffect--02"><img src="./img/aaron-burden-TBjlyNzZ8H4-unsplash.jpg"></div>
-              <div class="gridView-item scrollEffect--02"><img src="./img/aaron-burden-TBjlyNzZ8H4-unsplash.jpg"></div>
-              <div class="gridView-item scrollEffect--02"><img src="./img/aaron-burden-TBjlyNzZ8H4-unsplash.jpg"></div>
-              <div class="gridView-item scrollEffect--02"><img src="./img/aaron-burden-TBjlyNzZ8H4-unsplash.jpg"></div>
-              <div class="gridView-item scrollEffect--02"><img src="./img/aaron-burden-TBjlyNzZ8H4-unsplash.jpg"></div>
-              <div class="gridView-item scrollEffect--02"><img src="./img/aaron-burden-TBjlyNzZ8H4-unsplash.jpg"></div>
-              <div class="gridView-item scrollEffect--02"><img src="./img/aaron-burden-TBjlyNzZ8H4-unsplash.jpg"></div>
-              <div class="gridView-item scrollEffect--02"><img src="./img/aaron-burden-TBjlyNzZ8H4-unsplash.jpg"></div>
-              <div class="gridView-item scrollEffect--02"><img src="./img/aaron-burden-TBjlyNzZ8H4-unsplash.jpg"></div>
-              <div class="gridView-item scrollEffect--02"><img src="./img/aaron-burden-TBjlyNzZ8H4-unsplash.jpg"></div>
-              <div class="gridView-item scrollEffect--02"><img src="./img/aaron-burden-TBjlyNzZ8H4-unsplash.jpg"></div>
-              <div class="gridView-item scrollEffect--02"><img src="./img/aaron-burden-TBjlyNzZ8H4-unsplash.jpg"></div>
-              <div class="gridView-item scrollEffect--02"><img src="./img/aaron-burden-TBjlyNzZ8H4-unsplash.jpg"></div>
-              <div class="gridView-item scrollEffect--02"><img src="./img/aaron-burden-TBjlyNzZ8H4-unsplash.jpg"></div>
-              <div class="gridView-item scrollEffect--02"><img src="./img/aaron-burden-TBjlyNzZ8H4-unsplash.jpg"></div>
-              <div class="gridView-item scrollEffect--02"><img src="./img/aaron-burden-TBjlyNzZ8H4-unsplash.jpg"></div>
-              <div class="gridView-item scrollEffect--02"><img src="./img/aaron-burden-TBjlyNzZ8H4-unsplash.jpg"></div>
-              <div class="gridView-item scrollEffect--02"><img src="./img/aaron-burden-TBjlyNzZ8H4-unsplash.jpg"></div>
-              <div class="gridView-item scrollEffect--02"><img src="./img/aaron-burden-TBjlyNzZ8H4-unsplash.jpg"></div>
-              <div class="gridView-item scrollEffect--02"><img src="./img/aaron-burden-TBjlyNzZ8H4-unsplash.jpg"></div>
-              <div class="gridView-item scrollEffect--02"><img src="./img/aaron-burden-TBjlyNzZ8H4-unsplash.jpg"></div>
-            </div>
+        <div class="section-item">
+          <div class="title--01">
+            <h2>Digital Design</h2>
           </div>
-        </section>
+        </div>
+        <div class="section-item">
+          <div class="sentence--01 sentence_fs_l">
+            <p>
+              <span class="textEffect-text">Design is a silent ambassador of your brand.</span><br>
+              <span class="textEffect-text">Stop them in their tracks.</span><br>
+              <span class="textEffect-text">Make them stare.</span>
+            </p>
+          </div>
+        </div>
+        <div class="section-item">
+          <div class="sentence--01">
+            <p>
+              Design is a silent ambassador of your brand. Stop them in their tracks. Make them stare. Design is a silent ambassador of your brand. Stop them in their tracks. Make them stare. Design is a silent ambassador of your brand. Stop them in their tracks. Make them stare. Design is a silent ambassador of your brand. Stop them in their tracks. Make them stare.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
+<section id="section-1" class="section--01">
+  <div class="gutter--01">
+    <div class="section-wrap">
+      <div class="section-contents">
+        <div class="section-item">
+          <div class="title--01">
+            <h2>Digital Design</h2>
+          </div>
+        </div>
+        <div class="section-item">
+          <div class="sentence--01 sentence_fs_l">
+            <p>
+              <span class="textEffect-text">Design is a silent ambassador of your brand.</span><br>
+              <span class="textEffect-text">Stop them in their tracks.</span><br>
+              <span class="textEffect-text">Make them stare.</span>
+            </p>
+          </div>
+        </div>
+        <div class="section-item">
+          <div class="sentence--01">
+            <p>
+              Design is a silent ambassador of your brand. Stop them in their tracks. Make them stare. Design is a silent ambassador of your brand. Stop them in their tracks. Make them stare. Design is a silent ambassador of your brand. Stop them in their tracks. Make them stare. Design is a silent ambassador of your brand. Stop them in their tracks. Make them stare.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   </div>

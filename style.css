@@ -3,7 +3,8 @@
 スタイルリセット
 /////////////////////////////////////////*/
 html, body, div, span, applet, object, iframe, input, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video, button {
-  border: 0 none; /*font-size: 100%;*/ /*font-weight: normal;*/
+  border: 0 none;
+  font-size: 100%; /*font-weight: normal;*/
   margin: 0;
   padding: 0;
   vertical-align: baseline;
@@ -264,26 +265,11 @@ body {
  * .section--01
  */
 .section--01 {
-  padding: 100px 0 0;
-  position: relative;
-  z-index: 1;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 200px 0;
 }
 .section--01 + .section--01 {
-  margin-top: 140vh;
-}
-.section--01 a {
-  color: #ddd;
-}
-.section--01 img {
-  height: auto;
-  max-width: 100%;
-  vertical-align: bottom;
-}
-.section--01 .section-pcImage {
-  display: block;
-}
-.section--01 .section-spImage {
-  display: none;
+  margin-top: 200px;
 }
 .section--01 .section-number {
   position: relative;
@@ -304,142 +290,51 @@ body {
   top: 0;
   z-index: 2;
 }
-.section--01 .section-gutter {
-  padding-left: 100px;
-  padding-right: 100px;
+.section--01 img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: bottom;
+}
+.section--01 .section-pcImage {
+  display: block;
+}
+.section--01 .section-spImage {
+  display: none;
 }
 .section--01 .section-wrap {
   margin: 0 auto;
-  max-width: 900px;
+  width: min(100vw, 1000px);
 }
-.section--01 .section_maxWidth_1600 {
-  max-width: 1600px;
+.section--01 .section-contents .section-item + .section-item {
+  margin-top: 40px;
 }
-
 /**
  * .title--01
  */
 .title--01 {
-  /*span {
-    display: inline-block;
-    height: $fontSize;
-    overflow: $overflow;
-    vertical-align: top;
-
-    b {
-      display: block;
-      line-height: 1;
-    }
-  }*/
-}
-.title--01, .title--01 * {
-  color: #ddd;
   font-family: "Montserrat", sans-serif;
-  font-size: 40px;
+  font-size: 80px;
   font-weight: 900;
   line-height: 1.2;
   text-transform: uppercase;
-}
-
-/**
- * .title--02
- */
-.title--02,
-.title--02 * {
-  color: #ddd;
-  font-family: "Montserrat", sans-serif;
-  font-size: 40px;
-  font-weight: 700;
-  font-weight: 900;
-  line-height: 1.2;
-  text-transform: uppercase;
-}
-
-.title--02 span {
-  display: inline-block;
-  overflow: hidden;
-  vertical-align: top;
-}
-.title--02 span b {
-  display: block;
 }
 
 /**
  * .sentence--01
  */
 .sentence--01 {
-  color: #ddd;
   font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
 }
-.sentence--01 p {
+.sentence--01.sentence_fs_l {
   font-size: 28px;
-  font-weight: 900;
-  line-height: 1.4;
-}
-.sentence--01.sentence_fs_s p {
-  font-size: 14px;
-  line-height: 1.4;
-}
-.sentence--01 span {
-  overflow: visible;
-  perspective: 2000px;
-  vertical-align: top;
-}
-.sentence--01 span b {
-  backface-visibility: hidden;
-  transform-origin: left;
-}
-.sentence--01.sentence_fs_small {
-  font-size: 14px;
+  line-height: 1.2;
 }
 
-.boxx-03-contents {
-  position: relative;
-  z-index: 1;
-}
-
-.scrollEffect-01-rect {
-  background-color: rgb(228, 228, 228);
-  display: block;
-  position: absolute;
-  top: -25vh;
-  left: -20vh;
-  right: -20vh;
-  height: 35vh;
-  transform-origin: center right;
-}
-
-.boxx--03 .boxx-wrap {
-  position: relative;
-  z-index: 1;
-}
-.boxx--03 .boxx-contents {
-  color: #666;
-  background: #111111;
-  padding: 0 16vw 16vw;
-}
-
-.effect01 .scrollEffect--01-rect {
-  background: red;
-}
-
-.scrollEffect--01 {
-  position: relative;
-  width: 100%;
-  z-index: -1;
-}
-.scrollEffect--01 .scrollEffect-rect {
-  background: #111111;
-  display: block;
-  position: absolute;
-  top: -16vw;
-  left: -16vw;
-  right: -16vw;
-  height: 40vw;
-  transform-origin: center right;
-  z-index: -1;
-}
-
+/**
+ * #section-1 .gridView
+ */
 #section-1 .gridView-contents {
   display: flex;
   flex-flow: row wrap;
@@ -455,16 +350,4 @@ body {
 #section-1 .gridView-item {
   margin: 0 0 40vw 16vw;
   width: calc(33.33% - 16vw);
-}
-
-#section-2 {
-  background-color: red;
-}
-
-#section-3 {
-  background-color: red;
-}
-
-#section-4 {
-  background-color: red;
 }/*# sourceMappingURL=style.css.map */
