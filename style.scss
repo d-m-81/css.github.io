@@ -70,23 +70,6 @@ $hover-1:(opacity: .65, transition: opacity .3s);
   }
 }
 
-body {
-  line-height: normal;
-  overflow-x: hidden;
-  transition: opacity 1s;
-}
-
-body.loading {
-  opacity: 0;
-}
-
-//a {
-//  text-decoration: underline 1px solid;
-//  text-decoration-thickness: 1px;
-//  text-underline-offset: inherit;
-//}
-// /フォントの設定
-
 
 
 html {
@@ -96,6 +79,13 @@ html {
 body {
   background: $background;
   counter-reset: section 0;
+  line-height: normal;
+  overflow-x: hidden;
+  transition: opacity 1s;
+}
+
+body.loading {
+  opacity: 0;
 }
 
 

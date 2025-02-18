@@ -242,16 +242,6 @@ html {
     -webkit-text-size-adjust: 100%;
   }
 }
-body {
-  line-height: normal;
-  overflow-x: hidden;
-  transition: opacity 1s;
-}
-
-body.loading {
-  opacity: 0;
-}
-
 html {
   background: #000;
 }
@@ -259,6 +249,13 @@ html {
 body {
   background: #000;
   counter-reset: section 0;
+  line-height: normal;
+  overflow-x: hidden;
+  transition: opacity 1s;
+}
+
+body.loading {
+  opacity: 0;
 }
 
 /**
