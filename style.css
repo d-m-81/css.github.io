@@ -362,21 +362,42 @@ body.loading {
   }
 }
 /**
- * #section-1 .gridView
+ * #section-1 .gridView 削除
  */
-#section-1 .gridView-contents {
-  display: flex;
-  flex-flow: row wrap;
-  margin: 0 0 -40vw -16vw;
-  width: calc(100% + 16vw);
-}
-#section-1 .gridView-contents > *:nth-child(3n+1), #section-1 .gridView-contents > *:nth-child(3n+2), #section-1 .gridView-contents > *:nth-child(3n+3) {
-  transform: translate(4vw, 0);
-}
-#section-1 .gridView-contents > *:nth-child(6n+1), #section-1 .gridView-contents > *:nth-child(6n+2), #section-1 .gridView-contents > *:nth-child(6n+3) {
-  transform: translate(-4vw, 0);
-}
-#section-1 .gridView-item {
-  margin: 0 0 40vw 16vw;
-  width: calc(33.33% - 16vw);
-}/*# sourceMappingURL=style.css.map */
+/*#section-1 {
+
+  .gridView {
+
+    &-wrap {
+    }
+
+    &-contents {
+      display: flex;
+      flex-flow: row wrap;
+      margin: 0 0 -40vw -16vw;
+      width: calc(100% + 16vw);
+
+      & > * {
+      }
+
+      & > *:nth-child(3n + 1),
+      & > *:nth-child(3n + 2),
+      & > *:nth-child(3n + 3) {
+        //border: 1px solid red;
+        transform: translate(4vw, 0);
+      }
+
+      & > *:nth-child(6n + 1),
+      & > *:nth-child(6n + 2),
+      & > *:nth-child(6n + 3) {
+        //border: 1px solid blue;
+        transform: translate(-4vw, 0);
+      }
+    }
+
+    &-item {
+      margin: 0 0 40vw 16vw;
+      width: calc(33.33% - 16vw);
+    }
+  }
+}*//*# sourceMappingURL=style.css.map */
