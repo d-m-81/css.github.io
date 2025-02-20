@@ -185,6 +185,18 @@ body.loading {
   text-transform: uppercase;
 }
 
+@media screen and (max-width: 1024px) {
+
+  .title--01 {
+
+    font-family: "Montserrat", sans-serif;
+    font-size: max(32px, 8vw);//min-w 375px
+    font-weight: 900;
+    line-height: 1.2;
+    text-transform: uppercase;
+  }
+}
+
 
 
 /**
@@ -205,6 +217,26 @@ body.loading {
 
     & + p {
       margin-top: 28px;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  
+  .sentence--01 {
+    font-size: 12px;
+    line-height: 1.6;
+  
+    &.sentence_fs_l {
+      font-size: 20px;
+      line-height: 1.2;
+    }
+  
+    p {
+  
+      & + p {
+        margin-top: 28px;
+      }
     }
   }
 }
