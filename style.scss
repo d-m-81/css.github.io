@@ -84,7 +84,11 @@ body {
   transition: opacity 1s;
 }
 
-body.loading {
+main.loading {
+  transition: opacity 1s;
+}
+
+main.loading {
   opacity: 0;
 }
 
